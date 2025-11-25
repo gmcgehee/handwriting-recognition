@@ -50,7 +50,7 @@ class Window(ctk.CTk):
             return
         prediction = self.model.predict(digit)
         self.label = ctk.CTkLabel(self, text=f'Prediction: {prediction[0]}')
-        self.label.place(relx='0.5', rely='0.6', anchor='center')
+        self.label.place(relx='0.5', rely='0.7', anchor='center')
         # Convert to Pillow image and save
         #pimage = Image.fromarray(digit.reshape(28, 28))
         #pimage.show()
